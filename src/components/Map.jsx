@@ -2,7 +2,7 @@ import { MapContainer, TileLayer, Marker } from "react-leaflet";
 
 const Map = ({ data, error }) => {
   return (
-    <section className="h-screen w-screen">
+    <section className="h-screen w-screen map-section">
       {data &&
       error === undefined &&
       data?.latitude !== undefined &&
