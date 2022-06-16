@@ -41,7 +41,7 @@ export default function App() {
               backgroundSize: "cover"
             }}
           >
-            <h1 className="text-xl text-white text-center mt-7 mb-4 md:mb-7 font-bold">
+            <h1 className="text-xl text-white text-center mt-8 md:mt-0 mb-4 md:mb-7 font-bold">
               IP Address Tracker
             </h1>
             <div className="origin-center">
