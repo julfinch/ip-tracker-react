@@ -2,13 +2,13 @@ import { MapContainer, TileLayer, Marker } from "react-leaflet";
 
 const Map = ({ data, error }) => {
   return (
-    <section className="h-screen w-screen map-section">
+    <section className="map-section">
       {data &&
       error === undefined &&
       data?.latitude !== undefined &&
       data?.longitude !== undefined ? (
         <MapContainer
-          className="map w-screen"
+          className="map"
           center={[data?.latitude, data?.longitude]}
           zoom={13}
           scrollWheelZoom={false}
