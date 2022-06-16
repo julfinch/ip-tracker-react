@@ -5,7 +5,7 @@ const Output = ({ data, error }) => {
         <span className="text-[9px] text-gray-400 font-bold tracking-widest uppercase">
           IP Address
         </span>
-        <p className="ip-info text-sm md:text-base md:mt-3 h-0 font-bold text-lg md:text-xl">
+        <p className="ip-info text-sm sm:text-lg md:mt-3 h-0 font-bold text-lg md:text-xl">
           {data?.ip}
         </p>
       </div>
@@ -14,7 +14,7 @@ const Output = ({ data, error }) => {
         <span className="text-[9px] text-gray-400 font-bold tracking-widest uppercase">
           Location
         </span>
-        <p className="location-info text-sm md:text-base md:mt-3 font-bold text-lg md:text-xl">
+        <p className="location-info text-sm sm:text-lg md:mt-3 font-bold text-lg md:text-xl">
           {data?.city === undefined
             ? "--"
             : `${data?.city}, ${data?.country_name}`}
@@ -25,7 +25,7 @@ const Output = ({ data, error }) => {
         <span className="text-[9px] text-gray-400 font-bold tracking-widest uppercase">
           Timezone
         </span>
-        <p className="timezone-info text-sm md:text-base md:mt-3 font-bold text-lg md:text-xl">
+        <p className="timezone-info text-sm sm:text-lg md:mt-3 font-bold text-lg md:text-xl">
           {data?.utc_offset === undefined ? "--" : `UTC: ${data?.utc_offset}`}
         </p>
       </div>
@@ -34,7 +34,7 @@ const Output = ({ data, error }) => {
         <span className="text-[9px] text-gray-400 font-bold tracking-widest uppercase">
           ISP
         </span>
-        <p className="isp-info text-sm md:text-base md:mt-3 font-bold text-lg md:text-xl">
+        <p className="isp-info text-sm sm:text-lg md:mt-3 font-bold text-lg md:text-xl">
           {data?.org === undefined ? "--" : data?.org}
         </p>
       </div>
