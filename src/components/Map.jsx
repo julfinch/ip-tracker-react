@@ -8,7 +8,7 @@ const Map = ({ data, error }) => {
       data?.latitude !== undefined &&
       data?.longitude !== undefined ? (
         <MapContainer
-          className="map"
+          className="map w-screen"
           center={[data?.latitude, data?.longitude]}
           zoom={13}
           scrollWheelZoom={false}
