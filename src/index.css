@@ -39,8 +39,8 @@ header {
   line-height: 90%;
 }
 .map-section {
-  max-height: 65vh;
-  min-width: 100vw;
+  min-height: 65vh;
+  min-width: fit-content;
 }
 .map {
   height: 100%;
