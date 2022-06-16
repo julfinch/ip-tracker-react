@@ -218,18 +218,22 @@
 2. Generate tailwind.config.js and postcss.config.js:
     > `yarn tailwindcss init -p`
 3. Modify tailwind.config.js file:
-    > module.exports = {
-    >     content: ["./src/**/*.{js,jsx,ts,tsx}"],
-    >     theme: {
-    >          extend: {},
-    >     },
-    >     plugins: [],
-    > };
+   ```js
+     module.exports = {
+         content: ["./src/**/*.{js,jsx,ts,tsx}"],
+         theme: {
+              extend: {},
+         },
+         plugins: [],
+     };
+   ```
 
 4. Add tailwind base, components and utilities to index.css :
-    > @tailwind base;
-    > @tailwind components;
-    > @tailwind utilities;
+     ```css
+     @tailwind base;
+     @tailwind components;
+     @tailwind utilities;
+     ```
 
 ---
 
