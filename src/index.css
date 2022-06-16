@@ -21,7 +21,6 @@
 body {
   font-family: "Rubik", sans-serif;
   scroll-behavior: smooth;
-  overflow: hidden;
 }
 
 main {
@@ -40,11 +39,11 @@ header {
   line-height: 90%;
 }
 .map-section {
-  height: 100vh;
-  width: 100vw;
+  height: 10vh;
+  width: 10vw;
 }
 .map {
-  height: 65vh;
+  height: 15vh;
   z-index: -1;
 }
 
