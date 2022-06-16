@@ -2,7 +2,7 @@ import { MapContainer, TileLayer, Marker } from "react-leaflet";
 
 const Map = ({ data, error }) => {
   return (
-    <section className="map-section">
+    <section>
       {data &&
       error === undefined &&
       data?.latitude !== undefined &&
