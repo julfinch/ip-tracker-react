@@ -1,5 +1,5 @@
-# Data Protect Website
-  -This react app was built using codesandbox.io 
+# IP Address Tracker
+  -A react app that can show you the location, timezone, and the internet service provider of the IP Address that you would like to search using the API provided by [IPAPI](www.ipapi.co). The location will also be shown in the map using the API provided by [LEAFLET](https://leafletjs.com) and the tiles layer is provided by [OpenStreetMap](https://www.openstreetmap.org).
   
 ## Table of contents
 
@@ -7,18 +7,19 @@
   - [Screenshot](#screenshot)
   - [Links](#links)
 - [Codesandbox React App](#codesandbox-react-app)
-- [Installing Yarn](#installing-yarn)
-- [Create VITE App](#create-vite-app)
+- [ERRORS](#errors)
+  - [Error: Does not have a commit checked out](#no-commit-checked-out)
+- [Set-up: Tailwind CSS using yarn](#setup-tailwind-css-using-yarn)
 
 ## Overview
 
 ### Screenshot
 
-![](./_readme_img/protect-secure.png)
+![](./_readme_img/IP-Address-Tracker.png)
 
 ### Links
 
-- Live Site URL: [https://frabjous-eclair-f01ccc.netlify.app/](https://frabjous-eclair-f01ccc.netlify.app/)
+- Live Site URL: [https://taupe-entremet-fdc18e.netlify.app/](https://taupe-entremet-fdc18e.netlify.app/)
 
 ## Codesandbox React App
 
@@ -202,109 +203,41 @@
     
 ---
 
-## Installing YARN
-[https://www.digitalocean.com/community/tutorials/how-to-install-and-use-the-yarn-package-manager-for-node-js](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-the-yarn-package-manager-for-node-js)
-
-1. I checked first to see if I have a yarn installed and see what version it is: 
-	`yarn —version`
-2. Output is: 
-	`1.22.18`
-3. I am inside `C:\Users\lenovo\Documents\webdev1_Jul\REACT` and already have a pre-made folder inside it named **\protect-secure**, to navigatte to that directory, I wrote in the terminal : 
-	`cd protect-secure`
-4. I then set the version to berry to download the current, actively developedd version of Yarn: 
-	`yarn set version berry`
-	![](./_readme_img/yarn-1-protect-secure.png)
-5. To chech if indeed the latest berry was installed, I wrote:
-	`yarn --version`
-6. Result was :
-	`3.2.1`
-7. To start a new yarn project, I wrote:
-	`yarn init`
-	![](./_readme_img/yarn-2-protect-secure.png)
-8. This command line created a `package.json` and `readme.md` inside **\REACT\protect-secure**
+### ERROR: DOES NOT HAVE A COMMIT CHECKED OUT
+![](./_readme_img/2022-06-15_a.png)
+![](./_readme_img/2022-06-15_b.png)
+![](./_readme_img/2022-06-15_c.png)
+![](./_readme_img/2022-06-15_d.png)
 
 ---
 
-## Create VITE App
-[https://www.digitalocean.com/community/tutorials/how-to-set-up-a-react-project-with-vite](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-react-project-with-vite)
+## SET-UP: TAILWIND CSS USING YARN
 
-9. To start creating a VITE, I wrote:
-	`yarn create vite`
-10. It asked for a project name, I wrote:
-	`protect-secure`
-11. Then chose react on the following framework and variant:
-	`Select a framework: >> react`
-	`Select a variant: >> react`
-12. This resulted to another folder named **\protect-secure** inside another folder with the same name. The result was: `\webdev1_Jul\REACT\protect-secure\protect-secure`
-13. I opened the folder inside VSCode:
-	`cd protect-secure`
-14. Then install the dependencies:
-	`yarn`
-15. I met an error from here where it involves `yarn.lock` and `package.json` and it detects those files inside `C:\Users\lenovo` and is telling me to delete them.
-	![](./_readme_img/yarn-3-protect-secure.png)
-16. As a precaution, I just moved those 2 files that is inside it to another folder that I just made named **yarn and package json**. I wrote `yarn` again in the terminal but still the same error exists. Then I remembered that another `package.json` was created inside `webdev1_Jul\REACT\protect-secure` along with a `readme.md`. I moved both files inside a new folder I created inside `\REACT` named `from protect secure`. I ran `yarn` and it successfuly installed.
-18. To start the Development Server and see the live server, I wrote:
- 	`yarn run dev`	
+1. Install Tailwind CSS with postcss & autoprefixer:
+    > `yarn add -D tailwindcss postcss autoprefixer`
+2. Generate tailwind.config.js and postcss.config.js:
+    > `yarn tailwindcss init -p`
+3. Modify tailwind.config.js file:
+    > module.exports = {
+    >     content: ["./src/**/*.{js,jsx,ts,tsx}"],
+    >     theme: {
+    >          extend: {},
+    >     },
+    >     plugins: [],
+    > };
 
-PUBLISHING TO GITHUB:
+4. Add tailwind base, components and utilities to index.css :
+    > @tailwind base;
+    > @tailwind components;
+    > @tailwind utilities;
 
-1. Create a local git repository:
-     `git init`
-2. If there are uncommited files in the source control:
-     `git commit -m "Your comment"`
-3. Go to Github account and create a new Repo
-4. Copy the link of the repo.
-5. Type in the terminal in succession
-     > Map the remote repo link to local git repo:
-     > `git remote add origin <link>`
-     >
-     > Verifies the link to the remote repo:
-     > `git remote -v`
-     >
-     > Pushes to commited changes into the remote repo:
-     > `git push -u origin master`
-
-IF ERROR:
-     > error: src refspec master does not match any.  
-     > error: failed to push some refs to 'ssh://xxxxx.com/project.git'
-
-The most probable reason for this error is that all the files are untracked and have not been added. `git add --all` in case you wish to add all the files Or you can selectively add files. Then git `commit -m "Initial comment"`, `git push origin master`. This will surely work.
-
-UNTRACKED FILES AND CAN'T COMMIT TO REPOSITORY:
-
-  > PS C:\Users\lenovo\Documents\webdev1_Jul\REACT\shorten-api> git branch --set-upstream-to=origin/main main
-  > fatal: branch 'main' does not exist
-  > PS C:\Users\lenovo\Documents\webdev1_Jul\REACT\shorten-api> git pull origin master
-  >  * branch            master     -> FETCH_HEAD
-  > Already up to date.
-  > PS C:\Users\lenovo\Documents\webdev1_Jul\REACT\shorten-api> git remote -v
-  > origin  https://github.com/julfinch/shorten-api.git (fetch)
-  > origin  https://github.com/julfinch/shorten-api.git (push)
-  > PS C:\Users\lenovo\Documents\webdev1_Jul\REACT\shorten-api> git push
-  > fatal: The current branch master has no upstream branch.
-  > To push the current branch and set the remote as upstream, use
-  > 
-  >     git push --set-upstream origin master
-  > 
-  > PS C:\Users\lenovo\Documents\webdev1_Jul\REACT\shorten-api> git push --set-upstream origin master  
-  > Enumerating objects: 237, done.
-  > Counting objects: 100% (237/237), done.
-  > Delta compression using up to 2 threads
-  > Compressing objects: 100% (226/226), done.
-  > Writing objects: 100% (227/227), 23.16 MiB | 78.00 KiB/s, done.
-  > Total 227 (delta 9), reused 0 (delta 0), pack-reused 0
-  > remote: Resolving deltas: 100% (9/9), completed with 5 local objects.
-  > To https://github.com/julfinch/shorten-api.git
-  >    0bc4464..f5e9c93  master -> master
-  > Branch 'master' set up to track remote branch 'master' from 'origin'.
-  > PS C:\Users\lenovo\Documents\webdev1_Jul\REACT\shorten-api> 
-
-
+---
 
 ### Built with
 
 - Semantic HTML5 markup
 - CSS custom properties
+- Tailwind CSS
 - React Router DOM
 - ReactJS
 - Vite
