@@ -25,29 +25,21 @@
 
 1. Create a new sandbox:
 2. Rename the title with an appropriate name.
-3. Under **.src folder**, create an `assets` folder and `components` folder.
-4. In the `assets` folder, upload all the images from your local machine.
-5. In the `components` folder, create the following folders and the corresponding js and css files inside them:
-     > - cloud
-     >   - Cloud.js
-     >   - CloudStyles.css
-     > - data
-     >   - Data.js
-     >   - DataStyles.css
-     > - footer
-     >   - Footer.js
-     >   - FooterStyles.css
-     > - hero
-     >   - Hero.js
-     >   - HeroStyles.css
-     > - navbar
-     >   - Navbar.js
-     >   - NavbarStyles.css
+3. Under **.src folder**, create an `images` folder and `components` folder.
+4. In the `images` folder, upload all the images from your local machine.
+5. In the `components` folder, create the following files:
+     > - Search.js
+     > - Output.js
+     > - Modal.js
+     > - Map.js
 
 6. Install the following dependencies: 
      - react-icons
-     - react-scroll
-     - react-router-dom
+     - react-leaflet
+     - leaflet
+     - swr
+     - tailwind
+     
 7. Setting up the **Hamburger menu** for the `<Navbar />` when screen is less than 940px:
      > import `{useState}` from 'react'
      ```js
@@ -202,6 +194,8 @@
     ```
     
 ---
+
+## ERRORS 
 
 ### ERROR: DOES NOT HAVE A COMMIT CHECKED OUT
 ![](./_readme_img/2022-06-15_a.png)
