@@ -64,7 +64,7 @@ export default function App() {
             <Search setIp={setIp} />
             <Output data={data} error={error}/>
           </header>
-          <div className="h-screen w-screen">
+          <div className="min-h-screen w-screen">
           <Map data={data} error={error} />
           </div>
         </main>
