@@ -1,5 +1,7 @@
 # IP Address Tracker
-  A react app that can show you the location, timezone, and the internet service provider of the IP Address that you would like to search using the API provided by [IPAPI](www.ipapi.co). The location will also be shown in the map using the API provided by [LEAFLET](https://leafletjs.com) and the tiles layer is provided by [OpenStreetMap](https://www.openstreetmap.org).
+- Live Site URL: [https://find-this-ip.netlify.app/](https://find-this-ip.netlify.app/)
+
+- A react app that can show you the location, timezone, and the internet service provider of the IP Address that you would like to search using the API provided by [IPAPI](www.ipapi.co). The location will also be shown in the map using the API provided by [LEAFLET](https://leafletjs.com) and the tiles layer is provided by [OpenStreetMap](https://www.openstreetmap.org).
   
 ## Table of contents
 
@@ -19,7 +21,7 @@
 
 ### Links
 
-- Live Site URL: [https://taupe-entremet-fdc18e.netlify.app/](https://taupe-entremet-fdc18e.netlify.app/)
+- Live Site URL: [https://find-this-ip.netlify.app/](https://find-this-ip.netlify.app/)
 
 ## Codesandbox React App
 
